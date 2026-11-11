@@ -1,9 +1,4 @@
 function findNeedle($haystack) {
-  foreach($haystack as $index => $value)
-    {
-       if($value === "needle")
-         {
-          return "found the needle at position ".$index;
-       }    
-  }
+    $index=array_search("needle",$haystack);
+  return "found the needle at position " .$index;
 }
