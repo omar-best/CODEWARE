@@ -1,0 +1,27 @@
+<?php
+​
+function find($num) {
+  
+$arr_odd=[];
+$arr_even=[];
+​
+foreach($num as $val)
+    {
+        if($val%2==0)
+            {
+            array_push($arr_even,$val);
+            }  
+​
+        else{
+            array_push($arr_odd,$val);
+        }
+    }
+ if(count($arr_even)==1)
+    {
+        return $arr_even[0];
+    }
+ else
+    return $arr_odd[0];
+​
+​
+}
